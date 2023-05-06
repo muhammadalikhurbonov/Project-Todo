@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Todo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header_logo">
+          <img src="./assets/image/unnamed.png" alt="" />
+        </div>
+        <div class="header_item">
+          <button onclick="Create_item()">Create Item</button>
+        </div>
+      </header>
+      <div class="section_main"></div>
+      <form action="">
+        <input onclick="exit_function()" class="exit" type="button" value="X" />
+        <div class="form_img">
+          <label for="select_img">
+            Select Img
+            <input type="file" class="formImg" value="Select img" id="select_img" />
+          </label>
+        </div>
+        <input
+          maxlength="400"
+          name="Text"
+          placeholder="Text"
+          id="formText"
+          class="formText"
+          type="text"
+        />
+        <input
+          maxlength="400"
+          name="Cost"
+          placeholder="Cost"
+          id="formCost"
+          class="formCost"
+          type="text"
+        />
+        <span class="error"></span>
+        <div class="form_buttons">
+          <input class="cancel" type="submit" value="Cancel" />
+          <input class="save" type="submit" value="Save" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
